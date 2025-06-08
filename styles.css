@@ -1,0 +1,485 @@
+/* Базовые стили и сброс */
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #4d44db;
+    --accent-color: #ff6584;
+    --dark-color: #2d3748;
+    --light-color: #f7fafc;
+    --gray-color: #718096;
+    --font-main: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* Общие стили для контейнеров и секций */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: var(--font-main);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+/* Стили для кнопок */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #ff4d6d;
+    border-color: #ff4d6d;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Стили шапки сайта */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-family: var(--font-main);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-btn {
+    margin-left: 30px;
+}
+
+/* Стили герой-секции */
+.hero {
+    padding: 150px 0 80px;
+    background-color: var(--light-color);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-family: var(--font-main);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--gray-color);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image img,
+.cta-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid var(--primary-color);
+}
+/* Стили для карточек преимуществ */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Стили для аккордеона программы */
+.program-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    text-align: left;
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-btn i {
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
+}
+
+.accordion-content ul {
+    padding: 20px;
+    list-style-position: inside;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+}
+
+.accordion-item.active .accordion-btn i {
+    transform: rotate(180deg);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+/* Стили для блока статистики */
+.stats {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-number {
+    font-family: var(--font-main);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 1.1rem;
+}
+
+/* Стили для отзывов */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.review-rating {
+    color: #ffc107;
+    margin-top: 15px;
+}
+
+/* Стили для формы подписки */
+.cta {
+    background-color: var(--light-color);
+}
+
+.cta-content {
+    max-width: 500px;
+}
+
+.cta-title {
+    font-family: var(--font-main);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--gray-color);
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-secondary);
+}
+
+.form-note {
+    font-size: 0.8rem;
+    color: var(--gray-color);
+}
+
+/* Стили подвала */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer h3, .footer h4 {
+    font-family: var(--font-main);
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cbd5e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#email-field:focus {
+    outline: 2px solid var(--accent-color);
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+}

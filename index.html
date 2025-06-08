@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-курс по веб-дизайну | Стань профессионалом за 8 недель</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Подключение Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта с навигацией -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">WebDesign<span>Pro</span></a>
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">О курсе</a></li>
+                    <li><a href="#program" class="nav-link">Программа</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                 <a href="#form" class="btn btn-nav">Записаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- hero-section с главным заголовком и CTA -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Стань востребованным веб-дизайнером за 8 недель</h1>
+                    <p class="hero-subtitle">Наш онлайн-курс научит вас создавать современные сайты с нуля до профессионального уровня</p>
+                    <div class="hero-buttons">
+                        <a href="#form" class="btn btn-primary">Записаться на курс</a>
+                        <a href="#program" class="btn btn-secondary">Узнать программу</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Студенты изучают веб-дизайн" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с преимуществами курса -->
+        <section id="about" class="section benefits">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают наш курс</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-laptop-code benefit-icon"></i>
+                        <h3>Практические навыки</h3>
+                        <p>80% времени - практика. Вы создадите 5 реальных проектов для портфолио.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-user-tie benefit-icon"></i>
+                        <h3>Поддержка ментора</h3>
+                        <p>Обратная связь от практикующих дизайнеров с опытом 5+ лет.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-briefcase benefit-icon"></i>
+                        <h3>Трудоустройство</h3>
+                        <p>Помощь в составлении резюме и доступ к вакансиям партнеров.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с программой курса -->
+        <section id="program" class="section program">
+            <div class="container">
+                <h2 class="section-title">Программа курса</h2>
+                <div class="program-accordion">
+                    <!-- Элементы аккордеона с программой -->
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Неделя 1: Основы веб-дизайна <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Принципы композиции и типографики</li>
+                                <li>Работа с цветом и контрастом</li>
+                                <li>Основы UX/UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Неделя 2: Работа в Figma <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Интерфейс Figma</li>
+                                <li>Создание компонентов и стилей</li>
+                                <li>Прототипирование</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Остальные недели курса -->
+                </div>
+                <div class="program-download">
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Скачать полную программу
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с достижениями (анимированный счетчик) -->
+        <section class="section stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="1500">0</div>
+                        <div class="stat-text">Выпускников</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="85">0</div>
+                        <div class="stat-text">Трудоустроились</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="7">0</div>
+                        <div class="stat-text">Лет опыта</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с отзывами -->
+        <section id="reviews" class="section reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы наших студентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Анна К." loading="lazy">
+                            <div class="author-info">
+                                <h4>Анна К.</h4>
+                                <p>Выпускница 2023</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>"После курса получила первые заказы на фрилансе уже через 2 недели! Теперь работаю удаленно и зарабатываю в 3 раза больше, чем на предыдущей работе."</p>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Еще 2 отзыва -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с формой подписки -->
+        <section id="form" class="section cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Готовы начать карьеру веб-дизайнера?</h2>
+                    <p class="cta-subtitle">Оставьте заявку и получите первый урок бесплатно!</p>
+                    <form class="subscribe-form">
+                        <input type="email" id="email-field" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Получить бесплатный урок</button>
+                    </form>
+                    <p class="form-note">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Студенты курса" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футтер сайта -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>WebDesignPro</h3>
+                    <p>Онлайн-школа веб-дизайна. Обучаем с 2018 года.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="mailto:info@webdesignpro.ru">info@webdesignpro.ru</a></li>
+                        <li><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 WebDesignPro. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
